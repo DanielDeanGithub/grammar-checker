@@ -11,26 +11,20 @@ storyWords.forEach(word => {
     count++;
 });
 
-console.log(count);
+//console.log(count);
 
 storyWords = storyWords.filter(word => word !== unnecessaryWord);
 
 storyWords = storyWords.map(word => word === misspelledWord ? 'beautiful' : word);
 
 const badWordIndex = storyWords.findIndex(word => word === badWord);
-console.log(badWordIndex);
+//console.log(badWordIndex);
 
 storyWords[badWordIndex] = 'really';
 
 const lengthCheck = storyWords.every(word => word.length <= 10);
-console.log(lengthCheck);
+//console.log(lengthCheck);
 
 storyWords = storyWords.map(word => word.length > 10 ? 'glorious' : word);
-
-
-
-
-
-
 
 console.log(storyWords.join(' '));
