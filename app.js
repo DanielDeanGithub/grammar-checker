@@ -11,6 +11,7 @@ storyWords.forEach(word => {
     count++;
 });
 
+console.log(count);
 
 
 
