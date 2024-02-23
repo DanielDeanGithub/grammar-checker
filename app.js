@@ -17,6 +17,7 @@ storyWords = storyWords.filter(word => word !== unnecessaryWord);
 
 storyWords = storyWords.map(word => word === misspelledWord ? 'beautiful' : word);
 
+const badWordIndex = storyWords.findIndex(word => word === badWord);
 
 
 
