@@ -13,11 +13,9 @@ storyWords.forEach(word => {
 
 console.log(count);
 
-storyWords = storyWords.filter(word => {
-    return word !== unnecessaryWord;
-});
+storyWords = storyWords.filter(word => word !== unnecessaryWord);
 
-
+storyWords = storyWords.map(word => word === misspelledWord ? 'beautiful' : word);
 
 
 
