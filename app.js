@@ -25,6 +25,7 @@ storyWords[badWordIndex] = 'really';
 const lengthCheck = storyWords.every(word => word.length <= 10);
 console.log(lengthCheck);
 
+storyWords = storyWords.map(word => word.length > 10 ? 'glorious' : word);
 
 
 
