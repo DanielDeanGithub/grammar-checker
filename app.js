@@ -13,6 +13,9 @@ storyWords.forEach(word => {
 
 console.log(count);
 
+storyWords = storyWords.filter(word => {
+
+});
 
 
 
