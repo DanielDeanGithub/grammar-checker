@@ -8,7 +8,7 @@ let badWord = 'freaking';
 let count = 0;
 
 storyWords.forEach(word => {
-
+    count++;
 });
 
 
